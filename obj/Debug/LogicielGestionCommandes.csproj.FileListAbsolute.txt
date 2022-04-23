@@ -1,0 +1,16 @@
+C:\Users\TOSHIBA\source\repos\LogicielGestionCommandes\obj\Debug\LogicielGestionCommandes.csproj.AssemblyReference.cache
+C:\Users\TOSHIBA\source\repos\LogicielGestionCommandes\obj\Debug\LogicielGestionCommandes.csproj.SuggestedBindingRedirects.cache
+C:\Users\TOSHIBA\source\repos\LogicielGestionCommandes\obj\Debug\MainWindow.g.cs
+C:\Users\TOSHIBA\source\repos\LogicielGestionCommandes\obj\Debug\App.g.cs
+C:\Users\TOSHIBA\source\repos\LogicielGestionCommandes\obj\Debug\LogicielGestionCommandes_MarkupCompile.cache
+C:\Users\TOSHIBA\source\repos\LogicielGestionCommandes\obj\Debug\LogicielGestionCommandes_MarkupCompile.lref
+C:\Users\TOSHIBA\source\repos\LogicielGestionCommandes\bin\Debug\LogicielGestionCommandes.exe.config
+C:\Users\TOSHIBA\source\repos\LogicielGestionCommandes\bin\Debug\LogicielGestionCommandes.exe
+C:\Users\TOSHIBA\source\repos\LogicielGestionCommandes\bin\Debug\LogicielGestionCommandes.pdb
+C:\Users\TOSHIBA\source\repos\LogicielGestionCommandes\obj\Debug\MainWindow.baml
+C:\Users\TOSHIBA\source\repos\LogicielGestionCommandes\obj\Debug\LogicielGestionCommandes.g.resources
+C:\Users\TOSHIBA\source\repos\LogicielGestionCommandes\obj\Debug\LogicielGestionCommandes.Properties.Resources.resources
+C:\Users\TOSHIBA\source\repos\LogicielGestionCommandes\obj\Debug\LogicielGestionCommandes.csproj.GenerateResource.cache
+C:\Users\TOSHIBA\source\repos\LogicielGestionCommandes\obj\Debug\LogicielGestionCommandes.csproj.CoreCompileInputs.cache
+C:\Users\TOSHIBA\source\repos\LogicielGestionCommandes\obj\Debug\LogicielGestionCommandes.exe
+C:\Users\TOSHIBA\source\repos\LogicielGestionCommandes\obj\Debug\LogicielGestionCommandes.pdb

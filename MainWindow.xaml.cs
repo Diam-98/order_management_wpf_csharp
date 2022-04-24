@@ -32,22 +32,31 @@ namespace LogicielGestionCommandes
 
         private void all_customers_click(object sender, RoutedEventArgs e)
         {
-
+            customers_window cw = new customers_window();
+            cw.ShowDialog();
         }
 
         private void all_orders_details_click(object sender, RoutedEventArgs e)
         {
-
+            order_details_window odw = new order_details_window();
+            odw.ShowDialog();
         }
 
         private void all_product_click(object sender, RoutedEventArgs e)
         {
-
+            products_window pw = new products_window();
+            pw.ShowDialog();
         }
 
         private void all_orders_click(object sender, RoutedEventArgs e)
         {
+            orders_window ow = new orders_window();
+            ow.ShowDialog();
+        }
 
+        private void soft_close(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

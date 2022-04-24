@@ -1,0 +1,50 @@
+﻿<Window x:Class="LogicielGestionCommandes.BoiteDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LogicielGestionCommandes"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="BoiteDialog" Height="300" Width="600">
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+            <Button Content="Ses commandes"
+                Height="50"
+                Grid.Row="1"
+                Width="120"
+                Grid.Column="1"
+                Click="view_orders"/>
+            <Button Content="Actions"
+                Height="50"
+                Grid.Row="1"
+                Width="120"
+                Grid.Column="2"
+                Click="action_on_customer"/>
+            <Button Content="Annuler"
+                Height="50"
+                Grid.Row="1"
+                Width="120"
+                Grid.Column="3"
+                Click="cancel"/>
+        </Grid>
+        <Border Height="50"
+               VerticalAlignment="Top">
+            <TextBox Text="Quelle action voulez-vous effctuer sur ce client ?"
+                 FontSize="20"
+                 HorizontalAlignment="Center"/>
+        </Border>
+    </Grid>
+</Window>

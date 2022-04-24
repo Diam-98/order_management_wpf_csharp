@@ -5,8 +5,106 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LogicielGestionCommandes"
         mc:Ignorable="d"
-        Title="customers_window" Height="450" Width="800">
+        WindowState="Maximized"
+        Loaded="customer_window_load"
+        Title="Clients" Height="600" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">
+            <MenuItem Header="Menu">
+                <MenuItem Header="Tous les produits" Click="allProucts_click"/>
+                <MenuItem Header="Toutes les commamdes" Click="allOrders_click"/>
+            </MenuItem>
+            <MenuItem Header="Retour" Click="close_click"/>
+        </Menu>
+        <TextBlock Text="Gestion des commandes : Liste des clients" Grid.Column="1" Grid.Row="1" Margin="10"/>
+
+        <DataGrid Name="dgCustomer" 
+                  Margin="10,10,0,10" AutoGenerateColumns="True" 
+                  Grid.Column="1" Grid.Row="2" 
+                  SelectionChanged="dgClient_SelectionChanged"/>
+        <Grid Grid.Row="2" 
+              SelectiveScrollingGrid.SelectiveScrollingOrientation="Both" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="130"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="175"/>
+                <ColumnDefinition Width="175"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="ID Client" Grid.Row="0" Grid.Column="0"/>
+            <TextBox Name="customerID" Grid.Row="0" Grid.Column="2" IsReadOnly="True" Margin="5"/>
+
+            <Label Content="Nom de l'entreprise" Grid.Row="1" Grid.Column="0"/>
+            <TextBox Name="enterprisename" Grid.Row="1" Grid.Column="1" Margin="5"/>
+
+            <Label Content="Nom du contacte" Grid.Row="2" Grid.Column="0"/>
+            <TextBox Name="contactname" Grid.Row="2" Grid.Column="1" Margin="5"/>
+
+            <Label Content="Titre du contacte" Grid.Row="3" Grid.Column="0"/>
+            <TextBox Name="contacttitle" Grid.Row="3" Grid.Column="1" Margin="5"/>
+
+            <Label Content="Adresse" Grid.Row="4" Grid.Column="0"/>
+            <TextBox Name="adress" Grid.Row="4" Grid.Column="1" Margin="5"/>
+
+            <Label Content="Ville" Grid.Row="5" Grid.Column="0"/>
+            <TextBox Name="city" Grid.Row="5" Grid.Column="1" Margin="5"/>
+
+            <Label Content="Region" Grid.Row="6" Grid.Column="0"/>
+            <TextBox Name="region" Grid.Row="6" Grid.Column="1" Margin="5"/>
+
+            <Label Content="Code Postal" Grid.Row="7" Grid.Column="0"/>
+            <TextBox Name="postalcode" Grid.Row="7" Grid.Column="1" Margin="5"/>
+
+            <Label Content="Pays" Grid.Row="8" Grid.Column="0"/>
+            <TextBox Name="country" Grid.Row="8" Grid.Column="1" Margin="5"/>
+
+            <Label Content="Telephone" Grid.Row="9" Grid.Column="0"/>
+            <TextBox Name="phone" Grid.Row="9" Grid.Column="1" Margin="5"/>
+
+            <Label Content="Fax" Grid.Row="10" Grid.Column="0"/>
+            <TextBox Name="faxdeFax" Grid.Row="10" Grid.Column="1" Margin="5"/>
+
+            <Grid Grid.Row="29" Grid.Column="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <Button Content="Modifier" Grid.Column="0" Margin="7" Grid.Row="1"/>
+                <Button Content="Supprimer" Grid.Column="1" Margin="7" Grid.Row="1"/>
+                <Button Content="Ajouter" Grid.Column="0" Margin="7" Grid.Row="0" Grid.ColumnSpan="2"/>
+            </Grid>
+
+        </Grid>
     </Grid>
 </Window>

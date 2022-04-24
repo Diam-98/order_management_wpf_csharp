@@ -29,6 +29,7 @@
                 HorizontalAlignment="Right"
                 Margin="10"
                 Content="Quitter"
+                Click="soft_close"
                 FontSize="25">
         </Button>
 
